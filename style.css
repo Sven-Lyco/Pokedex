@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
+@import "./styles/header.css";
+@import "./styles/components/utils.css";
+@import "./styles/pokemon-cards.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Signika", sans-serif;
+  display: grid;
+  grid-template-rows: auto;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.scrolling {
+  overflow-y: auto;
+  margin: 0px;
+}

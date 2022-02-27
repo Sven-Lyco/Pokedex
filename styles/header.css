@@ -1,0 +1,20 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 48px;
+  z-index: 1;
+  background-color: #feca1b;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 0px 1px 1px #de1dde;
+}
+
+.header__image {
+  width: 125px;
+  margin: 10px;
+  transform: rotate(341deg);
+  position: relative;
+  top: 17px;
+}
