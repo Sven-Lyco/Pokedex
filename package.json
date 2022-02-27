@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run prettier:check",
+    "test": "npm run prettier:check && npm run eslint:check",
+    "dev": "npx live-server .",
     "prettier:write": "npx prettier --write .",
-    "prettier:check": "npx prettier --check ."
+    "prettier:check": "npx prettier --check .",
+    "eslint:check": "npx eslint ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,9 @@
   "homepage": "https://github.com/Sven-Lyco/Pokedex#readme",
   "dependencies": {
     "prettier": "^2.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0"
   }
 }
