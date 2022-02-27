@@ -1,26 +1,26 @@
 console.clear();
 
-const apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=151";
+const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151';
 
 fetch(apiUrl)
-  .then((response) => response.json())
-  .then((data) => createPokemonList(data.results))
-  .catch((error) => console.log(error));
+  .then(response => response.json())
+  .then(data => createPokemonList(data.results))
+  .catch(error => console.log(error));
 
 function createPokemonList(allPokemons) {
-  allPokemons.forEach((pokemonType) => {
+  allPokemons.forEach(pokemonType => {
     const pokemonURL = pokemonType.url;
     fetch(pokemonURL)
-      .then((response) => response.json())
-      .then((pokeData) => renderPokemonList(pokeData))
-      .catch((error) => console.log(error));
+      .then(response => response.json())
+      .then(pokeData => renderPokemonList(pokeData))
+      .catch(error => console.log(error));
   });
 }
 
 function renderPokemonList(pokemons) {
-  const item = document.createElement("div");
+  const item = document.createElement('div');
 
-  item.className = "pokemon-card";
+  item.className = 'pokemon-card';
   item.innerHTML = `
     <h2 class="pokemon-card__name">${pokemons.name}</h2>       
     <div class="pokemon-card_info">
