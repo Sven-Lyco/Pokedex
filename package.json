@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Sven-Lyco/Pokedex/issues"
   },
-  "homepage": "https://github.com/Sven-Lyco/Pokedex#readme"
+  "homepage": "https://github.com/Sven-Lyco/Pokedex#readme",
+  "dependencies": {
+    "prettier": "^2.5.1"
+  }
 }
