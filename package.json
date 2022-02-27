@@ -8,7 +8,8 @@
     "dev": "npx live-server .",
     "prettier:write": "npx prettier --write .",
     "prettier:check": "npx prettier --check .",
-    "eslint:check": "npx eslint ."
+    "eslint:check": "npx eslint .",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "eslint": "^8.10.0",
-    "eslint-config-prettier": "^8.4.0"
+    "eslint-config-prettier": "^8.4.0",
+    "husky": "^7.0.4"
   }
 }
