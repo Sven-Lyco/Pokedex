@@ -28,7 +28,7 @@ function renderPokemonList(pokemons) {
       <span class="pokemon-card__base-stat">${pokemons.stats[0].base_stat} HP</span>
       <span class="pokemon-card__type">${pokemons.types[0].type.name}</span> 
     </div>
-    <img class="pokemon-card__image" src="${pokemons.sprites.front_default}">   
+    <img class="pokemon-card__image" src="${pokemons.sprites.other.dream_world.front_default}">   
     <ul class="pokemon-card__tag-list">
       <li>main ability: ${pokemons.abilities[0].ability.name}</li>          
       <li>weight: ${pokemons.weight} lbs.</li>          
